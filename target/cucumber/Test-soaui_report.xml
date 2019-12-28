@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0"
+           tests="1"
+           time="3.228133">
+   <testcase classname="SoapUI2Jira_TM4J_NEG" name="SoapUI2Jira_TM4J_NEG" time="3.228133">
+      <failure message="java.lang.Exception: TestCase [Add_TestCase 1] failed without assertions&#xA;&#xD;&#xA;&#x9;at com.eviware.soapui.tools.SoapUITestCaseRunner.throwFailureException(SoapUITestCaseRunner.java:506)&#xD;&#xA;&#x9;at com.eviware.soapui.tools.SoapUITestCaseRunner.runRunner(SoapUITestCaseRunner.java:410)&#xD;&#xA;&#x9;at com.eviware.soapui.tools.AbstractSoapUIRunner.run(AbstractSoapUIRunner.java:158)&#xD;&#xA;&#x9;at stepDefinitions.mySoapUITestNegTest.soapui_negative_test_case(mySoapUITestNegTest.java:15)&#xD;&#xA;&#x9;at ✽.Given SoapUI negative test case(TM-T3.feature:5)&#xD;&#xA;">Given SoapUI negative test case.............................................failed
+
+StackTrace:
+java.lang.Exception: TestCase [Add_TestCase 1] failed without assertions
+&#xD;
+	at com.eviware.soapui.tools.SoapUITestCaseRunner.throwFailureException(SoapUITestCaseRunner.java:506)&#xD;
+	at com.eviware.soapui.tools.SoapUITestCaseRunner.runRunner(SoapUITestCaseRunner.java:410)&#xD;
+	at com.eviware.soapui.tools.AbstractSoapUIRunner.run(AbstractSoapUIRunner.java:158)&#xD;
+	at stepDefinitions.mySoapUITestNegTest.soapui_negative_test_case(mySoapUITestNegTest.java:15)&#xD;
+	at ✽.Given SoapUI negative test case(TM-T3.feature:5)&#xD;
+</failure>
+   </testcase>
+</testsuite>

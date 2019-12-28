@@ -1,0 +1,34 @@
+2019-12-28 17:28:27,687 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\suree\soapui-settings.xml]
+2019-12-28 17:28:29,030 INFO  [WsdlProject] Loaded project from [file:/C:/Users/suree/eclipse-workspace/SoapUI2Jira_TM4J_Neg/SoapUI_File/Calculator-soapui-project.xml]
+2019-12-28 17:28:29,046 WARN  [WsdlProject] Project 'Calculator' is from a newer version (5.5.0) of soapUI than this (4.0.1) and parts of it may be incompatible or incorrect. Saving this project with this version of soapUI may cause it to function differently.
+2019-12-28 17:28:29,382 INFO  [SoapUITestCaseRunner] Running soapUI tests in project [Calculator]
+2019-12-28 17:28:29,384 INFO  [SoapUITestCaseRunner] Running Project [Calculator], runType = SEQUENTIAL
+2019-12-28 17:28:29,401 INFO  [SoapUITestCaseRunner] Running soapUI testcase [Add_TestCase 1]
+2019-12-28 17:28:29,412 INFO  [SoapUITestCaseRunner] running step [Add]
+2019-12-28 17:28:30,039 ERROR [WsdlSubmit] Exception in request: java.lang.IllegalArgumentException: id is null
+2019-12-28 17:28:30,040 ERROR [SoapUI] An error occured [id is null], see error log for details
+2019-12-28 17:28:30,042 ERROR [errorlog] java.lang.IllegalArgumentException: id is null
+java.lang.IllegalArgumentException: id is null
+	at org.apache.commons.httpclient.protocol.Protocol.getProtocol(Protocol.java:111)
+	at org.apache.commons.httpclient.HostConfiguration.setHost(HostConfiguration.java:253)
+	at org.apache.commons.httpclient.HostConfiguration.setHost(HostConfiguration.java:315)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.followRedirects(HttpClientRequestTransport.java:285)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.sendRequest(HttpClientRequestTransport.java:207)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.run(WsdlSubmit.java:123)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.submitRequest(WsdlSubmit.java:76)
+	at com.eviware.soapui.impl.wsdl.WsdlRequest.submit(WsdlRequest.java:238)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlTestRequestStep.run(WsdlTestRequestStep.java:366)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:232)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:48)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:141)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:42)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:135)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-12-28 17:28:30,048 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status UNKNOWN
+2019-12-28 17:28:30,048 ERROR [SoapUITestCaseRunner] Add failed, exporting to [C:\Users\suree\eclipse-workspace\SoapUI2Jira_TM4J_Neg\CalculatorTestSuite_1-AddTestCase_1-Add-0-FAILED.txt]
+2019-12-28 17:28:30,074 INFO  [SoapUITestCaseRunner] Finished running soapUI testcase [Add_TestCase 1], time taken: 627ms, status: FAILED
+2019-12-28 17:28:30,074 INFO  [SoapUITestCaseRunner] Project [Calculator] finished with status [FAILED] in 683ms

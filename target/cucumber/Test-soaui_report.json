@@ -1,0 +1,41 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "SoapUI2Jira_TM4J_NEG",
+        "description": "",
+        "id": "soapui2jira-tm4j-neg;soapui2jira-tm4j-neg",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3228133100,
+              "error_message": "java.lang.Exception: TestCase [Add_TestCase 1] failed without assertions\n\r\n\tat com.eviware.soapui.tools.SoapUITestCaseRunner.throwFailureException(SoapUITestCaseRunner.java:506)\r\n\tat com.eviware.soapui.tools.SoapUITestCaseRunner.runRunner(SoapUITestCaseRunner.java:410)\r\n\tat com.eviware.soapui.tools.AbstractSoapUIRunner.run(AbstractSoapUIRunner.java:158)\r\n\tat stepDefinitions.mySoapUITestNegTest.soapui_negative_test_case(mySoapUITestNegTest.java:15)\r\n\tat ✽.Given SoapUI negative test case(TM-T3.feature:5)\r\n",
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "SoapUI negative test case",
+            "match": {
+              "location": "mySoapUITestNegTest.soapui_negative_test_case()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@TestCaseKey\u003dTM-T3"
+          }
+        ]
+      }
+    ],
+    "name": "SoapUI2Jira_TM4J_NEG",
+    "description": "",
+    "id": "soapui2jira-tm4j-neg",
+    "keyword": "Feature",
+    "uri": "TM-T3.feature"
+  }
+]
